@@ -14,7 +14,9 @@ export class AboutComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) {
     let id = 0;
     this.route.params.subscribe(res => id = res.id);
-    console.log(id);
+    // console.log(id);
+
+    // console.log(this._data.getData());
   }
 
   ngOnInit() {
